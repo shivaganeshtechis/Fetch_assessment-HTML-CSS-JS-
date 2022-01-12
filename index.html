@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="contact-form">
+        <h1>Form</h1>
+        
+        
+        <form>
+          
+          <div class="input-group">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text"/>
+          </div>
+          
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email"/>
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password"/>
+          </div>
+
+          <div class="input-group">
+          <input type="button" 
+          onclick="populateSelect2()" 
+              value="Click to Populate OCCUPATION" /> 
+
+              <select id="sel2" name="occupation" onchange="show2(this)">
+                  <option id="occupation"  value="occupation">-- OCCUPATION --</option>
+              </select>
+            </div>
+              
+            <div class="input-group">
+              <input type="button" 
+              onclick="populateSelect()" 
+                  value="Click to Populate STATE" />
+  
+                  <select id="sel"  name="state"  onchange="show(this)">
+                      <option id="state" value="state">-- STATE --</option>
+                  </select>
+                </div>
+          
+          <button type="submit">Send It!</button>
+        </form>
+      </section>
+      
+      <div class="results">
+        <h2>Form Data</h2>
+        <pre></pre>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
